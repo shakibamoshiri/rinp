@@ -32,8 +32,15 @@ Here is a screen-shot of running **10** `sleep` commands at the same time. One o
 Aa a quick start, you can use `echo -e` command. `-e` is for handing special characters like newline (= `'\n'`) and so on.  
 
   - `echo -e '1\ntwo\n3' | rinp -le sleep` runs **3** `sleep` commands which 1 of them is failed and the other two are succeed.  
-  - `echo -e '1\n\n\n\n  | rinp -le sleep` runs only one `sleep` command, because newlines are ignored when they are just empty lines.
+  - `echo -e '1\n\n\n\n  | rinp -le sleep` runs only one `sleep` command, because newlines are ignored when they are just empty lines.  
 
+If you liked to see behind the scene then try using `watch` command as follows:  
+`watch -n 1 -exec ps --forest -g -p process-id-of-your-terminal`  
+for watching all the children of your Terminal every 1 second. You will face something like this:  
+  
+<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">  
+  <img src="https://github.com/k-five/rinp/blob/master/rec/screenshot.watch.png" />  
+</a>  
 
 <br>  
 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">  
