@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="50">
+<svg width="900" height="50">
+  <title>screenshot</title>
+  <desc>An svg file as a badge for git repository</desc>
+  <path fill="#00B9B9"
+        d="M25,0 a25,25 0 0,0 0,50 l850,0 a25,25 0 0,0 0,-50 l-850,0" />
+  <text
+        x="450" y="35"
+        style="font-size: 25px; fill: #FFF;"
+        font-family="DejaVu Sans,Verdana,Geneva,sans-serif" 
+        text-anchor="middle"
+  >
+    gole
+  </test>
+</svg>
