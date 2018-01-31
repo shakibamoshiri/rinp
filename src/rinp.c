@@ -531,14 +531,18 @@ char* command_exist( char* lookfor )
             // see man 2 stat
             switch (fst.st_mode & S_IFMT)
             {
-                case S_IFBLK:   return NULL;
-                case S_IFCHR:   return NULL;
-                case S_IFDIR:   return NULL;
-                case S_IFIFO:   return NULL;
-                case S_IFLNK:   return NULL;
-                case S_IFREG:   return lookfor; // okay it is a regular file
-                case S_IFSOCK:  return NULL;
-                default:        return NULL;
+            case S_IFBLK:   return NULL;
+            case S_IFCHR:   return NULL;
+            case S_IFDIR:   return NULL;
+            case S_IFIFO:   return NULL;
+            case S_IFLNK:   return NULL;
+            case S_IFREG:
+                if( fst.st_mode & S_IXUSR )
+                    return lookfor;
+                else
+                    return NULL;
+            case S_IFSOCK:  return NULL;
+            default:        return NULL;
             }
         }
     }
@@ -689,14 +693,18 @@ char* command_exist( char* lookfor )
             // test it for its type:
             // for seeing what this switch does see: man 2 stat
             switch (fst.st_mode & S_IFMT) {
-                case S_IFBLK:   free( branch ); return NULL; // block device
-                case S_IFCHR:   free( branch ); return NULL; // character device
-                case S_IFDIR:   free( branch ); return NULL; // directory
-                case S_IFIFO:   free( branch ); return NULL; // FIFO/pipe
-                case S_IFLNK:   free( branch ); return NULL; // symbolic link
-                case S_IFREG:                 return branch; // regular file
-                case S_IFSOCK:  free( branch ); return NULL; // socket
-                default:        free( branch ); return NULL; // unknown
+            case S_IFBLK:   free( branch ); return NULL; // block device
+            case S_IFCHR:   free( branch ); return NULL; // character device
+            case S_IFDIR:   free( branch ); return NULL; // directory
+            case S_IFIFO:   free( branch ); return NULL; // FIFO/pipe
+            case S_IFLNK:   free( branch ); return NULL; // symbolic link
+            case S_IFREG:
+                if( fst.st_mode & S_IXUSR )
+                    return branch;
+                else
+                { free( branch ); return NULL; }
+            case S_IFSOCK:  free( branch ); return NULL; // socket
+            default:        free( branch ); return NULL; // unknown
             }
         }
 
