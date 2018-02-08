@@ -816,8 +816,8 @@ int main( int argc, char** argv )
                     {
                         gettimeofday( &end_time, NULL );
 
-                        // update the second
-                        second      = ( end_time.tv_sec - start_time.tv_sec );
+                        // get raw time in second
+                        size_t raw_time = ( end_time.tv_sec - start_time.tv_sec );
 
                         // then update the millisecond
                         millisecond = ( ( end_time.tv_usec / 1000 ) - ( start_time.tv_usec / 1000 ) );
@@ -825,18 +825,20 @@ int main( int argc, char** argv )
                         // sometimes it becomes negative and abs() is for fixing it
                         millisecond = abs( millisecond );
 
-                        if( second == 60  )
+                        while( raw_time-- )
                         {
-                            ++minute;
-                            second = 0;
+                            ++second;
+                            if( second >= 60  )
+                            {
+                                ++minute;
+                                second = 0;
+                            }
 
-                            // reset second elapsed time
-                            gettimeofday( &start_time, NULL );
-                        }
-                        if( minute == 60 )
-                        {
-                            ++hour;
-                            minute = 0;
+                            if( minute >= 60 )
+                            {
+                                ++hour;
+                                minute = 0;
+                            }
                         }
 
                         if( exit_status == EXIT_FAILURE )
@@ -849,6 +851,11 @@ int main( int argc, char** argv )
                             printf( "%.2d:%.2d:%.2d:%.3d", hour, minute, second, millisecond );
                             printf( "\033[3C\033[1;33m%-10d\033[m\033[3C%-6d\033[5C\033[1;32m \033[m\n\033[100D", return_pid, exit_status );
                         }
+
+                        // reset these variables for next process termination
+                        second = 0;
+                        minute = 0;
+                        hour   = 0;
                     }
                 }
                 // abnormal exiting
