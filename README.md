@@ -11,12 +11,13 @@
   <img src="https://github.com/k-five/rinp/blob/master/rec/rinp.banner.gif" />
 </a>
 
+<br>
+<br>
 
-█░░░█ █▀▀ █░░ █▀▀ █▀▀█ █▀▄▀█ █▀▀<br>
-█▄█▄█ █▀▀ █░░ █░░ █░░█ █░▀░█ █▀▀<br>
-░▀░▀░ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀▀ ▀░░░▀ ▀▀▀<br>
+<p align="center">
 to A Simple Beautiful Modern CLI application<br>
 for running multi-commands in parallel.
+</p>
 
 
 <br>
@@ -25,6 +26,7 @@ for running multi-commands in parallel.
 <br>
 
 Here is a screen-shot of running **10** `sleep` commands at the same time. One of them is failed and others are succeed.
+<br>
 <br>
 <a href="https://github.com/k-five/rinp">
   <img src="https://github.com/k-five/rinp/blob/master/rec/screenshot.png" />
