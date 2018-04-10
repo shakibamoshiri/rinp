@@ -1,22 +1,27 @@
+<h1 id="top" align="center">
+  <a href="#screenshot">screenshot</a>
+  | <a href="#example">example</a>
+  | <a href="#goal">goal</a>
+  | <a href="#license">license</a>
+</h1>
+<br>
+<br>
+
 <a href="https://github.com/k-five/rinp">
   <img src="https://github.com/k-five/rinp/blob/master/rec/rinp.banner.gif" />
 </a>
 
-<hr>
-<hr>
 
-
-█░░░█ █▀▀ █░░ █▀▀ █▀▀█ █▀▄▀█ █▀▀
-█▄█▄█ █▀▀ █░░ █░░ █░░█ █░▀░█ █▀▀
-░▀░▀░ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀▀ ▀░░░▀ ▀▀▀
-to A Simple Beautiful Modern CLI application
+█░░░█ █▀▀ █░░ █▀▀ █▀▀█ █▀▄▀█ █▀▀<br>
+█▄█▄█ █▀▀ █░░ █░░ █░░█ █░▀░█ █▀▀<br>
+░▀░▀░ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀▀ ▀░░░▀ ▀▀▀<br>
+to A Simple Beautiful Modern CLI application<br>
 for running multi-commands in parallel.
 
 
 <br>
 <br>
 <h1 id="screenshot" align="center">screenshot</h1>
-<br>
 <br>
 
 Here is a screen-shot of running **10** `sleep` commands at the same time. One of them is failed and others are succeed.
@@ -29,9 +34,8 @@ Here is a screen-shot of running **10** `sleep` commands at the same time. One o
 <br>
 <h1 id="example" align="center">example</h1>
 <br>
-<br>
 
-Aa a quick start, you can use `echo -e` command. `-e` is for handing special characters like newline (= `'\n'`) and so on.  
+As a quick start, you can use `echo -e` command. `-e` is for handing special characters like newline (= `'\n'`) and so on.  
 
   - `echo -e '1\ntwo\n3' | rinp -le sleep` runs **3** `sleep` commands which 1 of them is failed and the other two are succeed.
   - `echo -e '1\n\n\n\n  | rinp -le sleep` runs only one `sleep` command, because newlines are ignored when they are just empty lines.
@@ -47,7 +51,6 @@ for watching all the children of your Terminal every 1 second. You will face som
 <br>
 <br>
 <h1 id="goal" align="center">goal</h1>
-<br>
 <br>
 
 
@@ -65,7 +68,6 @@ I also tried to add some comments to the code, so you can read it as an educatio
 <br>
 <br>
 <h1 id="license" align="center">license</h1>
-<br>
 <br>
 <p align="center">
 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
