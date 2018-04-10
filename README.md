@@ -8,14 +8,14 @@
 <br>
 
 <a href="https://github.com/k-five/rinp">
-  <img src="https://github.com/k-five/rinp/blob/master/rec/rinp.banner.gif" />
+  <img src="https://github.com/k-five/rinp/blob/master/res/rinp.banner.gif" />
 </a>
 
 <br>
 <br>
 
 <p align="center">
-welcome to A Simple Beautiful Modern CLI application<br>
+welcome to a Simple, Beautiful, Modern CLI application<br>
 for running multi-commands in parallel.
 </p>
 
@@ -29,7 +29,7 @@ Here is a screen-shot of running **10** `sleep` commands simultaneously. One of 
 <br>
 <br>
 <a href="https://github.com/k-five/rinp">
-  <img src="https://github.com/k-five/rinp/blob/master/rec/screenshot.png" />
+  <img src="https://github.com/k-five/rinp/blob/master/res/screenshot.png" />
 </a>
 
 <br>
@@ -47,7 +47,7 @@ If you liked to see behind the scene then try using `watch` command as follows:
 for watching all the children of your Terminal every 1 second. You will face something like this:  
 
 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-  <img src="https://github.com/k-five/rinp/blob/master/rec/screenshot.watch.png" />
+  <img src="https://github.com/k-five/rinp/blob/master/res/screenshot.watch.png" />
 </a>
 
 <br>
