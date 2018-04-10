@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-to A Simple Beautiful Modern CLI application<br>
+welcome to A Simple Beautiful Modern CLI application<br>
 for running multi-commands in parallel.
 </p>
 
@@ -25,7 +25,7 @@ for running multi-commands in parallel.
 <h1 id="screenshot" align="center">screenshot</h1>
 <br>
 
-Here is a screen-shot of running **10** `sleep` commands at the same time. One of them is failed and others are succeed.
+Here is a screen-shot of running **10** `sleep` commands simultaneously. One of them is failed and others are succeeded.
 <br>
 <br>
 <a href="https://github.com/k-five/rinp">
@@ -58,8 +58,8 @@ for watching all the children of your Terminal every 1 second. You will face som
 
 This app is suitable for running muilt-lengthy commands that you do NOT want to see their outputs. I had a lot of `.mp4` files
 that should be converted to `.mp3`. Of course I could use `xargs` with redirection (= `&> /dev/null`), but I also liked to see
-if the commands are failed or succeed.
-Plus practicing some advanced techniques in `C` and `Linux Programming` that I have learned.
+if the commands are failed or succeeded.<br>
+Plus practicing some advanced techniques in `C` and `Linux Programming` that I have learned and some tiny of UI/UX.
 I daily use it for:
 
 `ls *.mp4 | rinp -le ffmpeg -i {} {}.mp3`
