@@ -1,6 +1,6 @@
 <br>
 <p id="top" align="center">
-  <a href="https://k-five.github.io/jsMyAdmin/">
+  <a href="#usage">
     <img src="./res/usage.svg" />
   </a>
   <a href="#screenshot">
