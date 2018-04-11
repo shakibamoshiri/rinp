@@ -35,6 +35,21 @@ welcome to a Simple, Beautiful, Modern CLI application<br>
 for running multi-commands in parallel.
 </p>
 
+<br>
+<br>
+
+<h1 id="usage" align="center">usage</h1>
+<p align="center">
+  &#9899; usage
+  &#9898; <a href="#screenshot">screenshot</a>
+  &#9898; <a href="#examples">examples</a>
+  &#9898; <a href="#goal">goal</a>
+  &#9898; <a href="#bottom">bottom</a>
+  &#9898; <a href="#top">top</a>
+</p>
+<br>
+
+
  1. `git clone https://github.com/k-five/rinp`
  2. `cd rinp/src/`
  3. `make build`
@@ -52,20 +67,6 @@ Now you can install it by: sudo cp rinp /usr/bin/
 <br>
 <br>
 
-<h1 id="usage" align="center">usage</h1>
-<p align="center">
-  &#9899; usage
-  &#9898; <a href="#screenshot">screenshot</a>
-  &#9898; <a href="#examples">examples</a>
-  &#9898; <a href="#goal">goal</a>
-  &#9898; <a href="#bottom">bottom</a>
-  &#9898; <a href="#top">top</a>
-</p>
-<br>
-
-<br>
-<br>
-
 <h1 id="screenshot" align="center">screenshot</h1>
 <p align="center">
   &#9898; <a href="#usage">usage</a>
@@ -78,8 +79,6 @@ Now you can install it by: sudo cp rinp /usr/bin/
 <br>
 
 Here is a screen-shot of running **10** `sleep` commands simultaneously. One of them is failed and others are succeeded.
-
-<br>
 
 <br>
 <a href="https://github.com/k-five/rinp">
