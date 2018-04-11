@@ -1,9 +1,25 @@
-<h1 id="top" align="center">
-  <a href="#screenshot">screenshot</a>
-  | <a href="#example">example</a>
-  | <a href="#goal">goal</a>
-  | <a href="#license">license</a>
-</h1>
+<br>
+<p id="top" align="center">
+  <a href="https://k-five.github.io/jsMyAdmin/">
+    <img src="./res/usage.svg" />
+  </a>
+  <a href="#screenshot">
+    <img src="./res/screenshot.svg" />
+  </a>
+  <a href="#examples">
+    <img src="./res/examples.svg" />
+  </a>
+  <a href="#goal">
+    <img src="./res/goal.svg" />
+  </a>
+  <a href="#bottom">
+    <img src="./res/bottom.svg" />
+  </a>
+  <a href="https://github.com/k-five/rinp/blob/master/LICENSE">
+    <img src="./res/license.svg" />
+  </a>
+</p>
+
 <br>
 <br>
 
@@ -19,14 +35,52 @@ welcome to a Simple, Beautiful, Modern CLI application<br>
 for running multi-commands in parallel.
 </p>
 
+ 1. `git clone https://github.com/k-five/rinp`
+ 2. `cd rinp/src/`
+ 3. `make build`
+
+sample output after `make build`
+
+```
+build mode:
+compile: main.c rinp.c... okay
+linking: main.o rinp.o... okay
+Now you can install it by: sudo cp rinp /usr/bin/
+"sude" is for root privilege. Use your own.
+```
 
 <br>
 <br>
+
+<h1 id="usage" align="center">usage</h1>
+<p align="center">
+  &#9899; usage
+  &#9898; <a href="#screenshot">screenshot</a>
+  &#9898; <a href="#examples">examples</a>
+  &#9898; <a href="#goal">goal</a>
+  &#9898; <a href="#bottom">bottom</a>
+  &#9898; <a href="#top">top</a>
+</p>
+<br>
+
+<br>
+<br>
+
 <h1 id="screenshot" align="center">screenshot</h1>
+<p align="center">
+  &#9898; <a href="#usage">usage</a>
+  &#9899; screenshot
+  &#9898; <a href="#examples">examples</a>
+  &#9898; <a href="#goal">goal</a>
+  &#9898; <a href="#bottom">bottom</a>
+  &#9898; <a href="#top">top</a>
+</p>
 <br>
 
 Here is a screen-shot of running **10** `sleep` commands simultaneously. One of them is failed and others are succeeded.
+
 <br>
+
 <br>
 <a href="https://github.com/k-five/rinp">
   <img src="https://github.com/k-five/rinp/blob/master/res/screenshot.png" />
@@ -34,7 +88,16 @@ Here is a screen-shot of running **10** `sleep` commands simultaneously. One of 
 
 <br>
 <br>
-<h1 id="example" align="center">example</h1>
+
+<h1 id="examples" align="center">examples</h1>
+<p align="center">
+  &#9898; <a href="#usage">usage</a>
+  &#9898; <a href="#screenshot">screenshot</a>
+  &#9899; examples
+  &#9898; <a href="#goal">goal</a>
+  &#9898; <a href="#bottom">bottom</a>
+  &#9898; <a href="#top">top</a>
+</p>
 <br>
 
 As a quick start, you can use `echo -e` command. `-e` is for handing special characters like newline (= `'\n'`) and so on.  
@@ -52,7 +115,16 @@ for watching all the children of your Terminal every 1 second. You will face som
 
 <br>
 <br>
+
 <h1 id="goal" align="center">goal</h1>
+<p align="center">
+  &#9898; <a href="#usage">usage</a>
+  &#9898; <a href="#screenshot">screenshot</a>
+  &#9898; <a href="#examples">examples</a>
+  &#9899; goal
+  &#9898; <a href="#bottom">bottom</a>
+  &#9898; <a href="#top">top</a>
+</p>
 <br>
 
 
@@ -69,10 +141,21 @@ I also tried to add some comments to the code, so you can read it as an educatio
 
 <br>
 <br>
+
 <h1 id="license" align="center">license</h1>
-<br>
 <p align="center">
-<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-  License GPL-3
-</a>
+  &#9898; <a href="#usage">usage</a>
+  &#9898; <a href="#screenshot">screenshot</a>
+  &#9898; <a href="#examples">examples</a>
+  &#9898; <a href="#gaol">goal</a>
+  &#9899; bottom
+  &#9898; <a href="#top">top</a>
+</p>
+<p id="bottom" align="center">
+  bline copyright &copy; 2017 Shakiba
+  <br>
+  <br>
+  ▒█▀▀█ ▒█▀▀█ ▒█░░░ █▀▀█<br>
+  ▒█░▄▄ ▒█▄▄█ ▒█░░░ ░░▀▄<br>
+  ▒█▄▄█ ▒█░░░ ▒█▄▄█ █▄▄█<br>
 </p>
