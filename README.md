@@ -151,7 +151,7 @@ I also tried to add some comments to the code, so you can read it as an educatio
   &#9898; <a href="#top">top</a>
 </p>
 <p id="bottom" align="center">
-  bline copyright &copy; 2017 Shakiba
+  rinp copyright &copy; 2017 Shakiba
   <br>
   <br>
   ▒█▀▀█ ▒█▀▀█ ▒█░░░ █▀▀█<br>
